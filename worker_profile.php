@@ -3,6 +3,10 @@ session_start();
 require_once("Object.php");
 include "header.php";
 
+
+include "nav.php";
+
+
 $get_email =$_SESSION['email'];
 $Object_oriented_index = new Database_object_oriented_index();
   $check_connection = $Object_oriented_index->connect_to_database_function();

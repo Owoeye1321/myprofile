@@ -39,7 +39,7 @@ $_SESSION['email'] =  $_POST['email'];
     	<div class="col-sm-12 col-md-6 col-lg-6" style="padding:25px 55px 25px 25px;">
     		 <div  style="border-color: blue;box-shadow: 5px 5px 5px 5px lightblue;border-bottom-color: black;border-radius: 15px;padding:30px 10px 30px 20px;" >
     		 		<label style="width: 150px;height: 150px; border-radius: 40%;">
-    		 			<img src="../images/index.jpg"  style="width:150px; height: 150px; border-radius: 40%; padding:5px 10px 5px 5px;" >
+    		 			<img src="images/index.jpg"  style="width:150px; height: 150px; border-radius: 40%; padding:5px 10px 5px 5px;" >
     		 			<input type="file" required name="employee_image" style="border:none;">
     		 				</label><br>
     		 			<br>
@@ -87,7 +87,7 @@ $_SESSION['email'] =  $_POST['email'];
                     <a class="links" href="help.php">Security </a> <a id="links" href="help.php">Contact Us </a><br>
                 </div>
             </center>
-</body>
+
 
 <?php
 include "footer.php";

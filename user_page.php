@@ -8,6 +8,10 @@ include "header.php";
                
 ?>
 <body>
+        
+<?php
+              include "nav.php";
+              ?>
 	
 
         <div style="background-color: #fff8f8f8; align-content: center;padding-bottom: 100px;">
@@ -84,7 +88,6 @@ include "header.php";
                 </div>
             </center>
 	
-</body>
 
 
 

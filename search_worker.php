@@ -19,6 +19,10 @@ if(isset($_SESSION['invalid_email'])){
 
 ?>
 <body>
+        
+<?php
+              include "nav.php";
+              ?>
      <div class=" 3s animated bounce fadeInLeft">
 <div class="header">
                 <h1 style="font-size: 40px;margin-top: 50px;">Worker Profile Search</h1>
@@ -46,5 +50,4 @@ if(isset($_SESSION['invalid_email'])){
         </center>
 
 
- </body>
 <?php include "footer.php"; ?>

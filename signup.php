@@ -49,4 +49,5 @@ include "header.php";
 
                     </center>
  </body>
-<?php include "footer.php" ?>
+ 
+</html>

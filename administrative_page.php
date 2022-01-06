@@ -81,7 +81,6 @@ include "header.php";
                 </div>
             </center>
 	
-</body>
 
 
 

@@ -23,6 +23,10 @@ $_SESSION['admin_username'] =  $_POST['admin_username'];
 }
 ?>
 <body>
+    
+<?php
+              include "nav.php";
+              ?>
         <div class="animate animated animate zoomInUp">
 <div class="header">
                 <h1 style="font-size: 40px;">Create a company database</h1>
@@ -40,8 +44,9 @@ $_SESSION['admin_username'] =  $_POST['admin_username'];
     	<div class="col-sm-12 col-md-6 col-lg-6" style="padding:25px 55px 25px 25px;">
     		 <div  style="border-color: blue;box-shadow: 5px 5px 5px 5px lightblue;border-bottom-color: black;border-radius: 15px;padding:30px 10px 30px 20px;" >
     		 		<label style="width: 150px;height: 150px; border-radius: 40%;">
-    		 			<img src="../images/index.jpg"  style="width:150px; height: 150px; border-radius: 40%; padding:5px 10px 5px 5px;" >
-    		 			<input type="file" required name="company_image" style="border:none;">
+    		 			<img src="images/index.jpg"  style="width:150px; height: 150px; border-radius: 40%; padding:5px 10px 5px 5px;" >
+    		 			<input type="file" required name="company_image" style="border:none;display:none;">
+                        <span> Choose an image</span>
     		 				</label><br>
     		 			<br>
     		 			
@@ -77,13 +82,6 @@ $_SESSION['admin_username'] =  $_POST['admin_username'];
 </div>
     </form>
 
-<center>
- <div class=" 5s animated bounce zoomInDown" style="margin-top:50px; width: 270px; padding: 2px 0px 2px 0px;margin-bottom: 40px;">
-                    <a class="links" href="help.php">Terms</a> <a class="links" href="help.php">Privacy </a>
-                    <a class="links" href="help.php">Security </a> <a id="links" href="help.php">Contact Us </a><br>
-                </div>
-            </center>
-</body>
 
 <?php
 include "footer.php";

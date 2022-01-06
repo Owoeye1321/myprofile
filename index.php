@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
  <center>
     <div class="animate animated animate zoomInUp">
-  <div  style="margin-top:100px;margin-bottom: 10px;"><img style="border-radius: 50%; height: 50px;width: 50px;" src="../images/xurde.jpg"></div>
+  <div  style="margin-top:100px;margin-bottom: 10px;"><img style="border-radius: 50%; height: 50px;width: 50px;" src="images/xurde.jpg"></div>
                  <div  style="width:270px; height: 250px;padding-top: 20px;background-color: #fff8f8f8;border-radius: 10px;"><p class="login_text">Sign in to My Profile</p>
                         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                                         <input style="width:200px;margin-bottom: 10px; border-radius:5px;" class="form-control" type="text" required placeholder="Username" name="username" >
@@ -54,4 +54,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </center>
         
  </body>
-<?php include "footer.php"; ?>
+ 
+</html>

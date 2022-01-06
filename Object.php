@@ -376,7 +376,7 @@ $get_password=$password;
     }  
     $source  = $image_tmp_name; 
        
-    $destination = '../company images/'.$image_name;
+    $destination = 'company images/'.$image_name;
     $filetype = strtolower(pathinfo($destination,PATHINFO_EXTENSION));
     if(file_exists($destination)){  
      $_SESSION["company_sign_err_one"] = "File already exist";
@@ -393,7 +393,7 @@ $get_password=$password;
        $check_connection = $this->connect_to_database_function();
         if ($check_connection == true) {
            $company_code = time();
-    if (file_exists("../companies/$company_name.txt")) {
+    if (file_exists("companies/$company_name.txt")) {
      echo "
           <script>
            
@@ -410,12 +410,12 @@ $get_password=$password;
   
 //fwrite($file, "<img style='height:300px;width:300px; margin-top: 20px;' src='$uploaded_image'>");
     } 
-    $f_myfile =   fopen("../companies/$company_name.txt", "a+");
+    $f_myfile =   fopen("companies/$company_name.txt", "a+");
       fwrite($f_myfile, " Company name : $company_name");
-     $s_myfile =   fopen("../companies/$admin_username.txt", "a+");
+     $s_myfile =   fopen("companies/$admin_username.txt", "a+");
    $detail = "Username : ".$admin_username ."<br> Password: ".$admin_password;
     fwrite($s_myfile, $detail);
-     $code_file =   fopen("../companies/company_code/$company_code.txt", "a+");
+     $code_file =   fopen("companies/company_code/$company_code.txt", "a+");
       fwrite($code_file, " Company name : $company_name");
 
   
@@ -481,7 +481,7 @@ public function add_profile_to_database($image_tmp_name,$image_name,$image_size,
 
       $source  = $image_tmp_name; 
        
-      $destination = '../workers images/'.$image_name;
+      $destination = 'workers images/'.$image_name;
       $filetype = strtolower(pathinfo($destination,PATHINFO_EXTENSION));
        if(file_exists($destination)){
      $_SESSION["add_profile_err_one"] = "File already exist";
@@ -497,7 +497,7 @@ public function add_profile_to_database($image_tmp_name,$image_name,$image_size,
 
        $check_connection = $this->connect_to_database_function();
         if ($check_connection == true) {
-    if (file_exists("../workers/$fullname.txt")) {
+    if (file_exists("workers/$fullname.txt")) {
      echo "
           <script>
            
@@ -509,16 +509,16 @@ public function add_profile_to_database($image_tmp_name,$image_name,$image_size,
     } else {
        
    // $test_data = $Object_oriented_index->test_data($uploaded_image);
-     if (file_exists("../companies/company_code/$company_code.txt") && 
-              file_exists("../companies/$company_name.txt")) {
+     if (file_exists("companies/company_code/$company_code.txt") && 
+              file_exists("companies/$company_name.txt")) {
        if( move_uploaded_file($source,$destination)){
      $uploaded_image = $destination;
   // $_SESSION["company_sign_err_two"]  = $uploaded_image ." uploaded successfully";
   }
       
-      $f_myfile =   fopen("../workers/$fullname.txt", "a+");
+      $f_myfile =   fopen("workers/$fullname.txt", "a+");
       fwrite($f_myfile, " Workers name : $fullname");
-     $s_myfile =   fopen("../workers/$fullname.txt", "a+");
+     $s_myfile =   fopen("workers/$fullname.txt", "a+");
    $detail = "Username : ".$fullname ."<br> Role: ".$employee_role;
     fwrite($s_myfile, $detail);
 
@@ -579,9 +579,9 @@ public function comment($image_tmp_name,$image_name,$image_size,$username,$comme
     $get_username = $this->test_data($username);
      $get_comment = $this->test_data($comment);
 
-     $source  = $image_tmp_name; 
+     $source  = $image_tmp_name;                                           
        
-      $destination = '../comment images/'.$image_name;
+      $destination = 'comment images/'.$image_name;
       $filetype = strtolower(pathinfo($destination,PATHINFO_EXTENSION));
        if($image_size > 200000){
        $_SESSION["err"] = "file too large,upload file less than 200 kilobyte";

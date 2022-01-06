@@ -3,8 +3,12 @@ include("header.php");
 ?>
 
 <body>
+	
+<?php
+              include "nav.php";
+              ?>
 	<div class="header">
-                <h1 class="footer_paragraph">My profile.com</h1>
+              
         </div>
         <center>
         	<div class="container">
@@ -30,31 +34,9 @@ include("header.php");
 		</div>
 	</div>
 </div>
-<div class=" 3s animated bounce fadeInRight">
-	 <div class="row">
-	 	<div class="col-sm-12 col-md-8 col-lg-6" style="padding: 20px 45px 15px 25px;">
-	 		<div style=";border-color: blue;box-shadow: 5px 5px 5px 5px lightblue;border-radius: 15px; padding: 10px 10px 10px 10px;">
-	 			<center><p style="font-size: 25px;">Contact Us</p></center>
-	 			<p>Email: Owoeye1321@gmail.com</p>
-      <p>Phone: 09153464158</p>
-      <p style="font-size: 10px;">Github:Github:http://Github.com/Owoeye1321</p>
-      <p style="font-size: 10px;">LinkedIn:LinkedIn://Linkedin.com/OwoeyeSamuel</p>
-	 		</div>
-	 	</div>
-	 	 	<div class="col-sm-12 col-md-8 col-lg-6" style="padding: 20px 45px 15px 25px;">
-	 	 		<div>
-	 	 			 <div style=";border-color: blue;box-shadow: 5px 5px 5px 5px lightblue;border-radius: 15px; padding: 10px 10px 10px 10px;margin-top: 80px;"><center>
-                    <a class="links" href="help.php">Terms</a> <a class="links" href="help.php">Privacy </a>
-                    <a class="links" href="help.php">Security </a> <a id="links" href="help.php">Contact Us </a><br></center>
-                </div>
-	 	 		</div>
-	 	 	</div>
-	 </div>
-	</div>
-	</div>
+
 	</center>
 
-</body>
 <?php 
 include("footer.php");
 ?>
