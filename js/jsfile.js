@@ -10,4 +10,4 @@ xhttp.onreadystatechange = function() {
   }  
 };
 xhttp.open("GET", "comment.php");
-xhttp.send();ty8
+xhttp.send();
