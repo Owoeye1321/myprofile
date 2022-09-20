@@ -3,9 +3,9 @@
   {
     
         public  $servername = "Localhost";
-            public $username ="root"; 
-              public $password ="";
-             public $database_name="database";  
+            public $username ="epiz_32558059"; 
+              public $password ="koqzoxofIMWT9";
+             public $database_name="epiz_32558059_database";  
            
  //connection to database function block of code
  //Connecting the keyword to the database 
@@ -70,9 +70,7 @@
                  } 
                 $check_connection->close(); 
        
-        } else {
-             die("An error stil exist in database connection"); 
-                }           
+        }           
  }
    //select to database function block of code
   //assigning the class variables to the method's variables using the "this" key variable     
